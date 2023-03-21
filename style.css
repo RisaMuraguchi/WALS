@@ -63,15 +63,78 @@ header {
   padding-top: 10px;
 }
 
-.portfolio-name {
+.portfolio {
+  background-color: #ECEFF1;
+  padding-top: 0 auto;
+}
+
+h2 {
   font-size: 32px;
   text-align: center;
+  position: relative;
   margin-top: 90px;
+  margin-bottom: 30px;
   padding-bottom: 8px;
+}
+
+  h2:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -8px; /*下線の上下位置調整*/
+  width: 70px; /*下線の幅*/
+  height: 3px; /*下線の太さ*/
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translate(-50%); /*位置調整*/
+  background-color: #EC715F; /*下線の色*/
 }
 
 p {
   text-align: center;
   font-size: 16px;
-  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-box {
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.portfolio-box:nth-child(odd) {
+  margin: 10px;
+}
+
+.portfolio-box:nth-child(1) {
+  background-image: url(img/sketch.jpg);
+}
+
+.portfolio-box:nth-child(2) {
+  background-image: url(img/websuku.png);
+}
+
+.portfolio-box:nth-child(3) {
+  background-image: url(img/write.jpg);
+}
+
+.portfolio-box:nth-child(4) {
+  background-image: url(img/webcamp.png);
+}
+
+.portfolio-box:nth-child(5) {
+  background-image: url(img/talk.jpg);
+}
+
+.portfolio-box:nth-child(6) {
+  background-image: url(img/webcamp-mother.png);
 }
