@@ -65,7 +65,7 @@ header {
 
 .portfolio {
   background-color: #ECEFF1;
-  padding-top: 0 auto;
+  transform: translateX(10px) translateY(10px);
 }
 
 h2 {
