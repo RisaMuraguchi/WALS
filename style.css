@@ -65,31 +65,35 @@ header {
 
 .portfolio {
   background-color: #ECEFF1;
-  transform: translateX(10px) translateY(10px);
 }
 
-h2 {
+.portfolio-contents{
+  width: 920px;
+  margin:  0 auto;
+}
+
+.common-heading {
   font-size: 32px;
   text-align: center;
   position: relative;
-  margin-top: 90px;
+  padding-top: 90px;
   margin-bottom: 30px;
   padding-bottom: 8px;
 }
 
-  h2:before {
+.common-heading:before {
   content: '';
   position: absolute;
   left: 50%;
-  bottom: -8px; /*下線の上下位置調整*/
-  width: 70px; /*下線の幅*/
-  height: 3px; /*下線の太さ*/
-  -moz-transform: translateX(-50%);
+  bottom: -15px;
+  display: inline-block;
+  width: 70px;
+  height: 3px;
   -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translate(-50%); /*位置調整*/
-  background-color: #EC715F; /*下線の色*/
+  transform: translateX(-50%);
+  background-color: #EC715F;
 }
+
 
 p {
   text-align: center;
@@ -97,9 +101,10 @@ p {
   margin-bottom: 30px;
 }
 
-.portfolio-item {
+.portfolio .portfolio-item {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .portfolio-box {
@@ -111,9 +116,6 @@ p {
   margin-top: 10px;
 }
 
-.portfolio-box:nth-child(odd) {
-  margin: 10px;
-}
 
 .portfolio-box:nth-child(1) {
   background-image: url(img/sketch.jpg);
